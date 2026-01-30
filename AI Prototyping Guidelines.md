@@ -15,7 +15,7 @@ Let’s clear some confusions between the terms which are often used interchange
 
 We will be using the term "prototype" rather than “PoC” because it can (and should unless classified) cover real data, as well as workflow fit.
 
-# **Making your Claims**
+# Making your Claims
 
 As you see from above a prototype (or PoC) is built around specific claims. It is important to write such claims down, then review them against the following checklist:
 
@@ -29,7 +29,7 @@ As you see from above a prototype (or PoC) is built around specific claims. It i
 
 If you ticked at least one box, review your list. 
 
-# **Setting up time and budget constraints**
+# Setting up time and budget constraints
 
 The key problem for failing prototypes is turning them into projects. More time and more money create opportunities to hide behind non-essential activities. On the other hand, tight time and budget constraints will likely scare away any vendor hoping to learn on the job, upsell the project, then find excuses. Once again, a checkbox:
 
@@ -39,7 +39,7 @@ The key problem for failing prototypes is turning them into projects. More time 
 
 If you tick any of the boxes it is not a prototype. 
 
-# **Data checklist**
+# Data checklist
 
 You cannot do anything with AI without data. To start, answer the following:
 
@@ -70,26 +70,29 @@ We exhausted all options. If you haven’t ticked both boxes above, you cannot r
 
 If however you conclude that you have data, and the project does not involve Agentic AI, you are good to go. 
 
-# **Agentic Checklist**
+# Agentic Checklist
 
-If you are prototyping an Agentic AI implementation, you need another step. Agentic AI prototypes are complex enough to warrant a separate checklist. However before going into such a checklist, it is important to verify the sanity of even contemplating an Agentic AI project. Therefore, please answer the following questions:
+Agentic AI uses LLM and interfaces to control existing applications. Because LLM outcome is probabilistic, one cannot guarantee an intelligent atgent not to do something seriously wrong and damaging. That As a result, all responsibilities for safety and If you are prototyping an Agentic AI implementation, you need another step. Agentic AI prototypes are complex enough to warrant a separate checklist. 
+However before going into such a checklist, it is important to verify the sanity of even contemplating an Agentic AI project. Therefore, please answer the following questions:
 
 - [ ] Are the processes the Agentic AI implementation will be contributing to known?  
 - [ ] Have the processes been reviewed for relevance?
 
 As the processes are split into steps to be performed by humans, you may find that it is harder for Agentic AI to implement an individual step than a larger part of the project. Doing more work to deliver an unconvincing result is the very opposite of a well-defined prototype.
 
-If you reviewed the processes, and believe you have viable scope, please complete separate Agentic AI Prototype Checklist available at 
+If you reviewed the processes, and believe you have viable scope, please complete separate Agentic AI Prototype Checklist available at https://github.com/businessabstraction/resources/
 
-# **The 7 deliverables you require in any GenAI pilot**
+# The 7 deliverables you require in any GenAI pilot
+No matter what kind of prototype you are running, if it involves Generative AI, you need to ensure that the deliverables include the following 7 items:
+- [ ] An evaluation harness (test set \+ scoring \+ pass/fail gates)  
+- [ ] A failure taxonomy (how it breaks in your domain)  
+- [ ] Traceability/provenance approach (what sources were used, when, and how)  
+- [ ] Logging and “what becomes a record” decision (especially gov/regulated)  
+- [ ] A red-team plan (prompt injection, data leakage, policy failure cases)  
+- [ ] Cost/latency guardrails (what happens when prompts blow out context/cost)  
+- [ ] A handover kit (so you’re not locked into the vendor)
 
-1. an evaluation harness (test set \+ scoring \+ pass/fail gates)  
-2. a failure taxonomy (how it breaks in your domain)  
-3. traceability/provenance approach (what sources were used, when, and how)  
-4. logging and “what becomes a record” decision (especially gov/regulated)  
-5. a red-team plan (prompt injection, data leakage, policy failure cases)  
-6. cost/latency guardrails (what happens when prompts blow out context/cost)  
-7. handover kit (so you’re not locked into the vendor)
+The file "GenAI Prototype Deliverables.md" in https://github.com/businessabstraction/resources/ provides detailed descriptions of each deliverable. 
 
 # **Use AI help, but no Vibe Coding**
 
@@ -101,4 +104,6 @@ If you reviewed the processes, and believe you have viable scope, please complet
 
 The solo Developer provides the coding agent with requirements in the form of prompts, and reviews the results. However, the Developer doesn’t understand the code nor every tool and platform used, focusing on visible behaviour of the system.
 
-I have no religious objections to vibe coding. If it works, if you deliver and the client is happy \- enjoy your massive productivity boost. However, vibe coding doesn’t give you certainty that it is validating whatever you were trying to validate. If you vibe code a prototype \- you do not know whether it validated your assumptions, you learned to mimic them. 
+I have no religious objections to vibe coding. If it works, if you deliver and the client is happy \- enjoy your massive productivity boost. However, vibe coding doesn’t give you certainty that it is validating whatever you were trying to validate. If you vibe code a prototype \- you do not know whether it validated your assumptions, or learned to mimic them. 
+
+In a prototype, you need to be in control of the code, and understand it. You can use AI coding assistants to speed up your work, but you need to knjow exactly what is happening. Y ou need to own the code. 

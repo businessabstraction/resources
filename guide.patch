@@ -1,0 +1,25 @@
+--- AI Prototyping Guidelines.md
++++ AI Prototyping Guidelines.md
+@@ -66,19 +66,9 @@
+ 
+ We exhausted all options. If you haven’t ticked both boxes above, you cannot run a prototype.
+ 
+-If however you conclude that you have data, and the project does not involve Agentic AI, you are good to go. 
+-
+-# **Agentic Checklist**
+-
+-If you are prototyping an Agentic AI implementation, you need another step. Agentic AI prototypes are complex enough to warrant a separate checklist. However before going into such a checklist, it is important to verify the sanity of even contemplating an Agentic AI project. Therefore, please answer the following questions:
+-
+-- [ ] Are the processes the Agentic AI implementation will be contributing to known?  
+-- [ ] Have the processes been reviewed for relevance?
+-
+-As the processes are split into steps to be performed by humans, you may find that it is harder for Agentic AI to implement an individual step than a larger part of the project. Doing more work to deliver an unconvincing result is the very opposite of a well-defined prototype.
+-
+-If you reviewed the processes, and believe you have viable scope, please complete separate Agentic AI Prototype Checklist available at 
+-
++If however you conclude that you have data, you are good to go. 
++
++- [ ] **If Agentic AI is in scope:** completed the separate **Agentic AI Prototype Checklist** (link/location: _TBD_)
+ # **The 7 deliverables you require in any GenAI pilot**
+ 
+ 1. an evaluation harness (test set \+ scoring \+ pass/fail gates)  
